@@ -1,0 +1,58 @@
+{
+    "SPDXVersion": "SPDX-2.2",
+    "DataLicense": "CC0-1.0",
+    "documentNamespace": "http://spdx.org/spdxdocument/Calculator",
+    "DocumentName": "SBOM for Calculator in SPDX format",
+    "Creator: Tool": "VERIBOM",
+    "Created": "2023-09-26T09:02:25.905151",
+    "CreatorComment": "This is the JSON format for an SBOM in SPDX format.",
+    "packages": [
+        {
+            "PackageName": "com.fasterxml.jackson.dataformat.jackson-dataformat-yaml",
+            "PackageVersion": "2.14.2",
+            "PackageSupplier": "",
+            "AuthorContact: CustomData": "",
+            "PackageLicenseConcluded": [],
+            "PackageDownloadLocation": "https://github.com/FasterXML/jackson-dataformats-text",
+            "PackageHomepage": "https://github.com/FasterXML/jackson-dataformats-text",
+            "PackageDependencies": [
+                {
+                    "groupId": "com.fasterxml.jackson.core",
+                    "artifactId": "jackson-databind"
+                },
+                {
+                    "groupId": "org.yaml",
+                    "version": "1.33",
+                    "artifactId": "snakeyaml"
+                }
+            ],
+            "PackageComment": "Support for reading and writing YAML-encoded data via Jackson abstractions."
+        },
+        {
+            "PackageName": "org.junit.jupiter.junit-jupiter-params",
+            "PackageVersion": "5.9.2",
+            "PackageSupplier": "",
+            "AuthorContact: CustomData": "scm:git:git://github.com/junit-team/junit5.git",
+            "PackageLicenseConcluded": [
+                "Eclipse Public License v2.0"
+            ],
+            "PackageDownloadLocation": "https://junit.org/junit5/",
+            "PackageHomepage": "https://junit.org/junit5/",
+            "PackageDependencies": [
+                {
+                    "scope": "compile",
+                    "groupId": "org.junit.jupiter",
+                    "version": "5.9.2",
+                    "artifactId": "junit-jupiter-api"
+                },
+                {
+                    "scope": "compile",
+                    "groupId": "org.apiguardian",
+                    "version": "1.1.2",
+                    "artifactId": "apiguardian-api"
+                }
+            ],
+            "PackageComment": "Module \"junit-jupiter-params\" of JUnit 5."
+        }
+    ]
+}
